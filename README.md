@@ -11,7 +11,7 @@ Windows, MySQL-databse, PHP-Backend.
 HOW TO RUN:
 
 1. Start Apache or Wamp server.
-2. Copy these files into the project folder. Upload sample data using walmart-sql file provided.
+2. Copy these files into the project folder. Upload sample data using walmart.sql file provided.
 3. Start the project at localhost/{Path-to-task_management}/login.php
 4. Start by logging into an existing manager or register new user.
 
