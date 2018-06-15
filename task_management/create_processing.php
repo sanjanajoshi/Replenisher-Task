@@ -69,7 +69,7 @@ if($result){
 	if($_POST["recurrence"] == 'once')
 	{
 		$insert_once_query = "INSERT INTO task_status (";
-		$insert_once_query .=" task_id, task_status_last_recurred, status";
+		$insert_once_query .=" task_status_task_id, task_status_last_recurred, status";
 		$insert_once_query .=" ) VALUES ( ";
 		$insert_once_query .=" '{$task_id}', '{$timedate}', 'pending' ";
 		$insert_once_query .=")";
@@ -94,7 +94,7 @@ if($result){
 		while(strtotime($timedate) <= strtotime($end_time)){
 				
 				$insert_daily_query = "INSERT INTO task_status (";
-				$insert_daily_query .=" task_id, task_status_last_recurred, status";
+				$insert_daily_query .=" task_status_task_id, task_status_last_recurred, status";
 				$insert_daily_query .=" ) VALUES ( ";
 				$insert_daily_query .=" '{$task_id}', '{$timedate}', 'pending' ";
 				$insert_daily_query .=")";
@@ -123,7 +123,7 @@ if($result){
 		while(strtotime($timedate) <= strtotime($end_time)){
 				
 				$insert_hourly_query = "INSERT INTO task_status (";
-				$insert_hourly_query .=" task_id, task_status_last_recurred, status";
+				$insert_hourly_query .=" task_status_task_id, task_status_last_recurred, status";
 				$insert_hourly_query .=" ) VALUES ( ";
 				$insert_hourly_query .=" '{$task_id}', '{$timedate}', 'pending' ";
 				$insert_hourly_query .=")"; 
